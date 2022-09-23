@@ -13,5 +13,16 @@ public class Cliente {
     private String nombre;
     private String apellido;
     private int DNI = 0;
-    private 
+    
+    public Cliente(String n, String a, int dni){
+        this.nombre = n;
+        this.apellido = a;
+        this.DNI = dni;
+    }
+    
+    public String toString(){
+        return "Nombre: " + this.nombre + "/n"
+                + "Apellido: " + this.apellido + "/n"
+                + "DNI: " + this.DNI;
+    }
 }
