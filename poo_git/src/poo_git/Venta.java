@@ -59,7 +59,7 @@ public class Venta {
                 "CLIENTE :"+this.cli.toString()+"\n"+
                 "Productos:                             "+"\n"+
                 this.mostrarProductos()+"\n"+
-                "Precio Total: "+this.calcularTotal()+
+                "Precio Total: "+this.calcularTotal()+"\n"+
                 "+------------------------------------+"+"\n"
                 );
     }

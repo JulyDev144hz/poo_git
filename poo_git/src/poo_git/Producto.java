@@ -6,9 +6,9 @@ package poo_git;
 // Clase abstracta ya que hay diferentes productos
 
 public abstract class Producto {
-    private int cod;
-    private String desc;
-    private double  precio;
+    protected int cod;
+    protected String desc;
+    protected double  precio;
 
 // El constructor crea el producto con un codigo, una descripcion y un precio por defecto
     
@@ -23,7 +23,7 @@ public abstract class Producto {
     @Override
     public String toString() {
         return "CODIGO PRODUCTO: "+this.cod+
-               "/nDESCRIPCION: "+this.desc;
+               "\nDESCRIPCION: "+this.desc;
     }
     
 // Metodo abstracto ya que cada producto se va a calcular por separado con sus parametros    

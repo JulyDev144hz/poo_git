@@ -24,11 +24,11 @@ public class Lavaropas extends Producto {
     }
     
     public String toString(){
-        return "Marca: " + this.marca + "/n"
-                + "Modelo: " + this.modelo + "/n"
-                + "Descripción: " + this.descripcion + "/n"
-                + "Precio: " + calcularTotal() + "/n"
-                + "Codigo: " + this.codigo;
+        return "Marca: " + this.marca + "\n"
+                + "Modelo: " + this.modelo + "\n"
+                + "Descripción: " + this.desc + "\n"
+                + "Precio: " + calcularTotal() + "\n"
+                + "Codigo: " + this.cod;
     }
     
     public double calcularTotal(){

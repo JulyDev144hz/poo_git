@@ -14,7 +14,16 @@ public class Ejecutable {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Cliente cli = new Cliente("Facundo", "Martinez", 47131213);
+        Venta v = new Venta(cli);
+        Lavaropas lav = new Lavaropas(1, "Lavarropas piola", 5000, "Phillips", "AX500", 2);
+        v.agregarProducto(lav);
+        Manzana manz = new Manzana(5, 100, 2, "Manzana piola");
+        v.agregarProducto(manz);
+        v.emitirFactura();
+        
+        
+        
     }
     
 }

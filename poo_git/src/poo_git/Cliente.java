@@ -21,8 +21,8 @@ public class Cliente {
     }
     
     public String toString(){
-        return "Nombre: " + this.nombre + "/n"
-                + "Apellido: " + this.apellido + "/n"
+        return "Nombre: " + this.nombre + "\n"
+                + "Apellido: " + this.apellido + "\n"
                 + "DNI: " + this.DNI;
     }
 }

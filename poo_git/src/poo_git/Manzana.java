@@ -15,14 +15,14 @@ public class Manzana extends Producto{
     }
 
     public String toString() {
-        return "Manzana "+this.kg+"kg : "+"$"+this.calcularTotal();
+        return "Manzana "+this.kg+"kg";
     }
     
     public double calcularTotal(){
         
-        this.precio += this.precio * this.kg;
+        double p = this.precio * this.kg;
         
-        return this.precio;
+        return p;
     }
     
     
