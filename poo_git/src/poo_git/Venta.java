@@ -38,7 +38,7 @@ public class Venta {
     public double calcularTotal(){
         double total = 0;
         for (Producto p : this.ListaProd){
-            total+=p.calcularTotal();
+            total += p.calcularTotal();
         }
         return total;
     }

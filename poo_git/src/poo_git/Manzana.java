@@ -6,23 +6,21 @@ package poo_git;
 
 public class Manzana extends Producto{
     private int kg;
-    private double precio;
+    
 
-    public Manzana(int kg, double pcio, int cod, String desc) {
-        super(cod, desc, pcio);
+    public Manzana(int c, String d, double p, int kg) {
+        super(c, d, p);
         this.kg = kg;
-        this.precio = precio;
+        
     }
 
     public String toString() {
-        return "Manzana "+this.kg+"kg";
+        return "Manzana "+this.kg+" kg " + "$"+calcularTotal();
     }
-    
+    @Override
     public double calcularTotal(){
         
-        double p = this.precio * this.kg;
-        
-        return p;
+        return this.precio * this.kg;
     }
     
     

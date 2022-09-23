@@ -31,6 +31,7 @@ public class Lavaropas extends Producto {
                 + "Codigo: " + this.cod;
     }
     
+    @Override
     public double calcularTotal(){
         return this.precio*this.cantidad;
     }
